@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fafaf9;
-  --foreground: #1c1917;
+  --background: #fdfafb;
+  --foreground: #2d1d20;
 }
 
 @theme {
@@ -10,16 +10,16 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
   
-  /* Redefining blue color palette to a sophisticated warm plum/rose-gold scheme */
-  --color-blue-50: #fff1f2;   /* Soft Rose Blush */
-  --color-blue-100: #ffe4e6;
-  --color-blue-200: #fecdd3;  /* Rose gold border */
-  --color-blue-300: #fda4af;
-  --color-blue-500: #f43f5e;
-  --color-blue-700: #be123c;
-  --color-blue-800: #9f1239;  /* Elegant Berry Hover */
-  --color-blue-900: #881337;  /* Deep Warm Plum/Rose */
-  --color-blue-950: #4c0519;
+  /* Premium Rose Gold Design System Palette */
+  --color-blue-50: #fbf1f2;   /* Softest Rose Blush background */
+  --color-blue-100: #f8e1e3;
+  --color-blue-200: #e2b4b9;  /* Classic Metallic Rose Gold accent border */
+  --color-blue-300: #d6989f;
+  --color-blue-500: #c5828a;
+  --color-blue-700: #b0656e;
+  --color-blue-800: #934c54;  /* Rich Rose-Copper hover state */
+  --color-blue-900: #7c3a42;  /* Deep Rose Gold / Burgundy (Highly readable for text/solid buttons) */
+  --color-blue-950: #4a1d22;  /* Deepest Mahogany Rose */
 }
 
 body {
