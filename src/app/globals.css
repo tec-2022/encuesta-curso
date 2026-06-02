@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fdfafb;
-  --foreground: #2d1d20;
+  --background: #FFF7F1; /* Marfil cálido */
+  --foreground: #2b1c1e; /* Dark chocolate/wine for readable body text */
 }
 
 @theme {
@@ -10,16 +10,20 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
   
-  /* Premium Rose Gold Design System Palette */
-  --color-blue-50: #fbf1f2;   /* Softest Rose Blush background */
-  --color-blue-100: #f8e1e3;
-  --color-blue-200: #e2b4b9;  /* Classic Metallic Rose Gold accent border */
-  --color-blue-300: #d6989f;
-  --color-blue-500: #c5828a;
-  --color-blue-700: #b0656e;
-  --color-blue-800: #934c54;  /* Rich Rose-Copper hover state */
-  --color-blue-900: #7c3a42;  /* Deep Rose Gold / Burgundy (Highly readable for text/solid buttons) */
-  --color-blue-950: #4a1d22;  /* Deepest Mahogany Rose */
+  /* Palette mapping from user's image */
+  --color-blue-50: #FFF7F1;   /* Marfil cálido (Fondo principal) */
+  --color-blue-100: #FDF1F0;
+  --color-blue-200: #E9B9B6;  /* Rosa empolvado (Acentos suaves / Bordes) */
+  --color-blue-300: #D9A5A0;  /* Rose gold suave */
+  --color-blue-500: #C98F8F;  /* Rose gold (Detalles / Botones) */
+  
+  /* Wine red shades for strong readability on backgrounds */
+  --color-blue-800: #753b49;  /* Dark Wine hover */
+  --color-blue-900: #8E4D5E;  /* Vino elegante (Títulos fuertes / Botones principales) */
+  --color-blue-950: #5c2f3c;  /* Vino elegante oscuro */
+  
+  --color-amber-500: #D8B56D; /* Champagne gold (Toques premium) */
+  --color-yellow-500: #D8B56D;
 }
 
 body {
