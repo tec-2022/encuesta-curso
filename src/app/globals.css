@@ -2,7 +2,7 @@
 
 :root {
   --background: #FFF7F1; /* Marfil cálido */
-  --foreground: #2b1c1e; /* Dark chocolate/wine for readable body text */
+  --foreground: #2d1d20; /* Dark chocolate/wine for readable body text */
 }
 
 @theme {
@@ -10,20 +10,27 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
   
-  /* Palette mapping from user's image */
-  --color-blue-50: #FFF7F1;   /* Marfil cálido (Fondo principal) */
-  --color-blue-100: #FDF1F0;
-  --color-blue-200: #E9B9B6;  /* Rosa empolvado (Acentos suaves / Bordes) */
-  --color-blue-300: #D9A5A0;  /* Rose gold suave */
-  --color-blue-500: #C98F8F;  /* Rose gold (Detalles / Botones) */
+  /* Color names matching the spec table */
+  --color-marfil: #FFF7F1;
+  --color-rosa-empolvado: #E9B9B6;
+  --color-rose-gold: #C98F8F;
+  --color-rose-gold-suave: #D9A5A0;
+  --color-champagne-gold: #D8B56D;
+  --color-dorado-suave: #C9A65A;
+  --color-vino: #8E4D5E;
+  --color-taupe: #B98E86;
+
+  /* Redefining Tailwind blue color variables to match the functional mapping */
+  --color-blue-50: #FFF7F1;   /* Fondo principal: Marfil cálido */
+  --color-blue-100: #E9B9B6;  /* Fondos secundarios / tarjetas: Rosa empolvado */
+  --color-blue-200: #C9A65A;  /* Bordes o acentos dorados: Dorado suave */
+  --color-blue-300: #B98E86;  /* Texto secundario / neutrales: Taupe rosado */
+  --color-blue-500: #D8B56D;  /* Detalles premium / íconos: Champagne gold */
   
-  /* Wine red shades for strong readability on backgrounds */
-  --color-blue-800: #753b49;  /* Dark Wine hover */
-  --color-blue-900: #8E4D5E;  /* Vino elegante (Títulos fuertes / Botones principales) */
-  --color-blue-950: #5c2f3c;  /* Vino elegante oscuro */
-  
-  --color-amber-500: #D8B56D; /* Champagne gold (Toques premium) */
-  --color-yellow-500: #D8B56D;
+  /* Buttons and hovers */
+  --color-blue-800: #D9A5A0;  /* Hover / elementos suaves: Rose gold suave */
+  --color-blue-900: #C98F8F;  /* Botones y detalles principales: Rose gold */
+  --color-blue-950: #8E4D5E;  /* Títulos fuertes / botón destacado: Vino elegante */
 }
 
 body {
