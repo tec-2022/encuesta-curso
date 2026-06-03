@@ -1,6 +1,6 @@
 'use client';
 
-import React, { use, useState } from 'react';
+import React, { use, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { AlertCircle, Lock, Mail, ShieldCheck } from 'lucide-react';
 import { login } from '@/lib/actions/login';
@@ -16,6 +16,7 @@ interface PageProps {
 export default function AdminLoginPage(props: PageProps) {
   const searchParams = use(props.searchParams);
   const router = useRouter();
+  const formRef = useRef<HTMLFormElement>(null);
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -71,7 +72,7 @@ export default function AdminLoginPage(props: PageProps) {
           </div>
         </CardHeader>
         <CardContent>
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-2">
               <Label htmlFor="email">Correo electrónico</Label>
               <div className="relative">
@@ -98,6 +99,12 @@ export default function AdminLoginPage(props: PageProps) {
                   placeholder="••••••••"
                   required
                   className="pl-11"
+                  onKeyDown={(event) => {
+                    if (event.key === 'Enter') {
+                      event.preventDefault();
+                      formRef.current?.requestSubmit();
+                    }
+                  }}
                 />
               </div>
             </div>
