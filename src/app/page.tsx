@@ -51,7 +51,7 @@ export default function Home() {
         <SurveyForm />
 
         <div className="border-t border-[#E9B9B6] pt-8 text-center text-xs uppercase tracking-[0.24em] text-[#B98E86]">
-          Uso académico exclusivo para la mejora continua del curso
+          Uso académico exclusivo para la mejora continua de las materias evaluadas
         </div>
       </div>
     </main>
