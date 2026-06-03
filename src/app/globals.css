@@ -1,40 +1,81 @@
 @import "tailwindcss";
 
 :root {
-  --background: #FFF7F1; /* Marfil cálido */
-  --foreground: #2d1d20; /* Dark chocolate/wine for readable body text */
+  --background: #f4efe7;
+  --foreground: #1f2937;
 }
 
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
-  
-  /* Color names matching the spec table */
-  --color-marfil: #FFF7F1;
-  --color-rosa-empolvado: #E9B9B6;
-  --color-rose-gold: #C98F8F;
-  --color-rose-gold-suave: #D9A5A0;
-  --color-champagne-gold: #D8B56D;
-  --color-dorado-suave: #C9A65A;
-  --color-vino: #8E4D5E;
-  --color-taupe: #B98E86;
+  --font-display: var(--font-display);
 
-  /* Redefining Tailwind blue color variables to match the functional mapping */
-  --color-blue-50: #FFF7F1;   /* Fondo principal: Marfil cálido */
-  --color-blue-100: #E9B9B6;  /* Fondos secundarios / tarjetas: Rosa empolvado */
-  --color-blue-200: #C9A65A;  /* Bordes o acentos dorados: Dorado suave */
-  --color-blue-300: #B98E86;  /* Texto secundario / neutrales: Taupe rosado */
-  --color-blue-500: #D8B56D;  /* Detalles premium / íconos: Champagne gold */
-  
-  /* Buttons and hovers */
-  --color-blue-800: #D9A5A0;  /* Hover / elementos suaves: Rose gold suave */
-  --color-blue-900: #C98F8F;  /* Botones y detalles principales: Rose gold */
-  --color-blue-950: #8E4D5E;  /* Títulos fuertes / botón destacado: Vino elegante */
+  --color-ink: #102033;
+  --color-ink-soft: #4d6175;
+  --color-parchment: #f4efe7;
+  --color-ivory: #fbf8f2;
+  --color-sand: #d9ccbb;
+  --color-brass: #af8d52;
+  --color-smoke: #d8e1ec;
+
+  --color-blue-50: #edf3f8;
+  --color-blue-100: #d8e6f2;
+  --color-blue-200: #b8cade;
+  --color-blue-300: #6d8195;
+  --color-blue-500: #af8d52;
+  --color-blue-800: #183250;
+  --color-blue-900: #102033;
+  --color-blue-950: #091321;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+::selection {
+  background: rgba(175, 141, 82, 0.22);
+}
+
+.font-display {
+  font-family: var(--font-display), serif;
+  font-variation-settings: "SOFT" 80, "WONK" 0;
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 14mm;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .print-report-shell {
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .print-report-section,
+  .print-avoid-break {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .print-force-break {
+    break-before: page;
+    page-break-before: always;
+  }
 }

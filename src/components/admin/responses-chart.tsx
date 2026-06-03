@@ -11,26 +11,26 @@ interface ResponsesChartProps {
 }
 
 export function ResponsesChart({ data }: ResponsesChartProps) {
-  const COLORS = ['#1e3a8a', '#0284c7', '#d97706']; // Navy, Ocean Blue, Soft Gold/Amber
+  const colors = ['#102033', '#3f5f84', '#af8d52'];
 
   return (
-    <div className="h-[300px] w-full mt-4">
+    <div className="h-[320px] w-full">
       <ResponsiveContainer width="100%" height="100%">
         <BarChart
           data={data}
-          margin={{ top: 20, right: 10, left: -20, bottom: 10 }}
+          margin={{ top: 12, right: 8, left: -24, bottom: 8 }}
         >
-          <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e2e8f0" />
+          <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#dfe6ee" />
           <XAxis 
             dataKey="subject" 
-            stroke="#64748b" 
+            stroke="#6d8195" 
             fontSize={11}
             fontWeight={600}
             tickLine={false}
             axisLine={false}
           />
           <YAxis 
-            stroke="#64748b" 
+            stroke="#6d8195" 
             fontSize={11}
             fontWeight={600}
             tickLine={false}
@@ -38,12 +38,17 @@ export function ResponsesChart({ data }: ResponsesChartProps) {
             allowDecimals={false}
           />
           <Tooltip 
-            cursor={{ fill: '#f1f5f9' }}
-            contentStyle={{ backgroundColor: '#ffffff', border: '1px solid #cbd5e1', borderRadius: '6px' }}
+            cursor={{ fill: 'rgba(16, 32, 51, 0.08)' }}
+            contentStyle={{
+              backgroundColor: 'rgba(255, 255, 255, 0.98)',
+              border: '1px solid rgba(184, 202, 222, 0.9)',
+              borderRadius: '16px',
+              boxShadow: '0 18px 40px -28px rgba(16, 32, 51, 0.45)',
+            }}
           />
-          <Bar dataKey="count" radius={[4, 4, 0, 0]} maxBarSize={60}>
+          <Bar dataKey="count" radius={[16, 16, 4, 4]} maxBarSize={64}>
             {data.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+              <Cell key={`cell-${index}`} fill={colors[index % colors.length]} />
             ))}
           </Bar>
         </BarChart>

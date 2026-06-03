@@ -8,10 +8,10 @@ export function PrintButton() {
   return (
     <Button
       onClick={() => window.print()}
-      className="flex items-center gap-1.5 cursor-pointer"
+      className="h-11 rounded-full bg-[#102033] px-5 text-white hover:bg-[#183250]"
     >
-      <Printer className="w-4 h-4" />
-      Imprimir / Guardar como PDF
+      <Printer className="h-4 w-4" />
+      Guardar o imprimir reporte
     </Button>
   );
 }

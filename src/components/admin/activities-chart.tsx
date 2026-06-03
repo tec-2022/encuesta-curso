@@ -11,21 +11,20 @@ interface ActivitiesChartProps {
 }
 
 export function ActivitiesChart({ data }: ActivitiesChartProps) {
-  // Sort activities by frequency descending
   const sortedData = [...data].sort((a, b) => b.count - a.count);
 
   return (
-    <div className="h-[400px] w-full mt-4">
+    <div className="h-[380px] w-full">
       <ResponsiveContainer width="100%" height="100%">
         <BarChart
           layout="vertical"
           data={sortedData}
-          margin={{ top: 10, right: 30, left: 10, bottom: 10 }}
+          margin={{ top: 8, right: 18, left: 12, bottom: 8 }}
         >
-          <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="#e2e8f0" />
+          <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="#dfe6ee" />
           <XAxis 
             type="number" 
-            stroke="#64748b" 
+            stroke="#6d8195" 
             fontSize={11}
             fontWeight={600}
             tickLine={false}
@@ -35,7 +34,7 @@ export function ActivitiesChart({ data }: ActivitiesChartProps) {
           <YAxis 
             type="category" 
             dataKey="activity" 
-            stroke="#64748b" 
+            stroke="#6d8195" 
             fontSize={11}
             fontWeight={500}
             tickLine={false}
@@ -49,10 +48,15 @@ export function ActivitiesChart({ data }: ActivitiesChartProps) {
             }}
           />
           <Tooltip 
-            cursor={{ fill: '#f1f5f9' }}
-            contentStyle={{ backgroundColor: '#ffffff', border: '1px solid #cbd5e1', borderRadius: '6px' }}
+            cursor={{ fill: 'rgba(16, 32, 51, 0.08)' }}
+            contentStyle={{
+              backgroundColor: 'rgba(255, 255, 255, 0.98)',
+              border: '1px solid rgba(184, 202, 222, 0.9)',
+              borderRadius: '16px',
+              boxShadow: '0 18px 40px -28px rgba(16, 32, 51, 0.45)',
+            }}
           />
-          <Bar dataKey="count" fill="#1e3a8a" radius={[0, 4, 4, 0]} maxBarSize={20} />
+          <Bar dataKey="count" fill="#102033" radius={[0, 14, 14, 0]} maxBarSize={18} />
         </BarChart>
       </ResponsiveContainer>
     </div>
