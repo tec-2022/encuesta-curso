@@ -12,25 +12,19 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <button
         className={cn(
-          "inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 cursor-pointer",
+          "inline-flex items-center justify-center rounded-xl text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 cursor-pointer",
           {
-            // Default: Navy Blue
-            "bg-blue-900 text-white hover:bg-blue-800 focus-visible:ring-blue-900": variant === 'default',
-            // Destructive: Red
+            "bg-blue-950 text-white hover:bg-blue-900 focus-visible:ring-blue-950": variant === 'default',
             "bg-red-600 text-white hover:bg-red-700 focus-visible:ring-red-600": variant === 'destructive',
-            // Outline: Navy Border
-            "border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 focus-visible:ring-blue-900": variant === 'outline',
-            // Secondary: Light gold or light grey/blue
-            "bg-slate-100 text-slate-900 hover:bg-slate-200 focus-visible:ring-slate-500": variant === 'secondary',
-            // Ghost: Text-only hoverbg
-            "hover:bg-slate-100 text-slate-700 hover:text-slate-900": variant === 'ghost',
-            // Link: Underlined text
-            "text-blue-900 underline-offset-4 hover:underline": variant === 'link',
+            "border border-blue-100 bg-white/90 hover:bg-blue-50 text-slate-700 focus-visible:ring-blue-950": variant === 'outline',
+            "bg-blue-50 text-blue-950 hover:bg-blue-100 focus-visible:ring-blue-200": variant === 'secondary',
+            "hover:bg-white/70 text-slate-700 hover:text-blue-950": variant === 'ghost',
+            "text-blue-950 underline-offset-4 hover:underline": variant === 'link',
           },
           {
             "h-10 px-4 py-2": size === 'default',
-            "h-9 rounded-md px-3": size === 'sm',
-            "h-11 rounded-md px-8": size === 'lg',
+            "h-9 rounded-lg px-3": size === 'sm',
+            "h-11 rounded-xl px-8": size === 'lg',
             "h-10 w-10": size === 'icon',
           },
           className
