@@ -57,14 +57,14 @@ export function ResponseFilters() {
   };
 
   return (
-    <div className="rounded-[30px] border border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.88)_0%,rgba(247,250,252,0.9)_100%)] p-5 shadow-[0_30px_90px_-56px_rgba(16,32,51,0.45)] backdrop-blur print:hidden sm:p-6">
-      <div className="flex flex-wrap items-start justify-between gap-4 border-b border-[#e6ebf1] pb-5">
+    <div className="rounded-[30px] border border-white/70 bg-[linear-gradient(180deg,rgba(255,247,241,0.88)_0%,rgba(255,247,241,0.92)_100%)] p-5 shadow-[0_30px_90px_-56px_rgba(142,77,94,0.45)] backdrop-blur print:hidden sm:p-6">
+      <div className="flex flex-wrap items-start justify-between gap-4 border-b border-[#E9B9B6] pb-5">
         <div className="flex items-start gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#edf3f8] text-[#102033] shadow-sm">
+          <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#FFF7F1] text-[#8E4D5E] shadow-sm">
             <Filter className="h-4 w-4" />
           </div>
           <div>
-            <h2 className="text-sm font-semibold uppercase tracking-[0.22em] text-[#102033]">
+            <h2 className="text-sm font-semibold uppercase tracking-[0.22em] text-[#8E4D5E]">
               Filtros y salida
             </h2>
             <p className="mt-1 max-w-xl text-sm leading-6 text-slate-500">
@@ -73,12 +73,12 @@ export function ResponseFilters() {
           </div>
         </div>
         <div className="flex flex-wrap gap-2">
-          <span className="rounded-full border border-[#d8e1ec] bg-white/80 px-3 py-1 text-xs font-semibold text-[#183250]">
+          <span className="rounded-full border border-[#E9B9B6] bg-white/80 px-3 py-1 text-xs font-semibold text-[#C98F8F]">
             {activeFilterCount === 0
               ? 'Sin filtros activos'
               : `${activeFilterCount} filtro${activeFilterCount > 1 ? 's' : ''} activo${activeFilterCount > 1 ? 's' : ''}`}
           </span>
-          <span className="rounded-full border border-[#e2d4c0] bg-[#fbf8f2] px-3 py-1 text-xs font-semibold text-[#7b622f]">
+          <span className="rounded-full border border-[#D8B56D] bg-[#FFF7F1] px-3 py-1 text-xs font-semibold text-[#C9A65A]">
             Salida lista para CSV o PDF
           </span>
         </div>
@@ -91,7 +91,7 @@ export function ResponseFilters() {
             id="filter-subject"
             value={subject}
             onChange={(e) => setSubject(e.target.value)}
-            className="flex h-12 w-full rounded-2xl border border-[#d8e1ec] bg-white px-4 py-2 text-sm text-slate-700 shadow-sm outline-none transition focus:border-[#6d8195] focus:ring-2 focus:ring-[#d8e6f2]"
+            className="flex h-12 w-full rounded-2xl border border-[#E9B9B6] bg-white px-4 py-2 text-sm text-slate-700 shadow-sm outline-none transition focus:border-[#B98E86] focus:ring-2 focus:ring-[#E9B9B6]"
           >
             <option value="all">Todas las materias</option>
             {SUBJECT_OPTIONS.map((subj) => (
@@ -109,7 +109,7 @@ export function ResponseFilters() {
             type="date"
             value={startDate}
             onChange={(e) => setStartDate(e.target.value)}
-            className="h-12 rounded-2xl border-[#d8e1ec] bg-white shadow-sm"
+            className="h-12 rounded-2xl border-[#E9B9B6] bg-white shadow-sm"
           />
         </div>
 
@@ -120,7 +120,7 @@ export function ResponseFilters() {
             type="date"
             value={endDate}
             onChange={(e) => setEndDate(e.target.value)}
-            className="h-12 rounded-2xl border-[#d8e1ec] bg-white shadow-sm"
+            className="h-12 rounded-2xl border-[#E9B9B6] bg-white shadow-sm"
           />
         </div>
 
@@ -133,21 +133,21 @@ export function ResponseFilters() {
               placeholder="Tema, frase o palabra clave"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="h-12 rounded-2xl border-[#d8e1ec] bg-white pl-9 shadow-sm"
+              className="h-12 rounded-2xl border-[#E9B9B6] bg-white pl-9 shadow-sm"
             />
           </div>
         </div>
       </div>
 
-      <div className="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-[#e6ebf1] pt-5">
+      <div className="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-[#E9B9B6] pt-5">
         <div className="flex flex-wrap items-center gap-2">
-          <Button onClick={handleApply} className="h-11 rounded-full bg-[#102033] px-5 hover:bg-[#183250]">
+          <Button onClick={handleApply} className="h-11 rounded-full bg-[#8E4D5E] px-5 hover:bg-[#C98F8F]">
             Aplicar filtros
           </Button>
           <Button
             variant="outline"
             onClick={handleClear}
-            className="h-11 rounded-full border-[#d8e1ec] bg-white px-5 text-slate-700"
+            className="h-11 rounded-full border-[#E9B9B6] bg-white px-5 text-slate-700"
           >
             <RefreshCw className="h-3.5 w-3.5" />
             Limpiar filtros
@@ -158,7 +158,7 @@ export function ResponseFilters() {
           <Button
             variant="outline"
             onClick={handleExport}
-            className="h-11 rounded-full border-[#e2d4c0] bg-[#fbf8f2] px-5 text-[#5c4925] hover:bg-[#f6efe4]"
+            className="h-11 rounded-full border-[#D8B56D] bg-[#FFF7F1] px-5 text-[#8E4D5E] hover:bg-[#FFF7F1]"
           >
             <Download className="h-4 w-4" />
             Exportar CSV
@@ -166,7 +166,7 @@ export function ResponseFilters() {
           <Button
             variant="outline"
             onClick={handlePrint}
-            className="h-11 rounded-full border-[#d8e1ec] bg-white px-5 text-[#102033] hover:bg-[#edf3f8]"
+            className="h-11 rounded-full border-[#E9B9B6] bg-white px-5 text-[#8E4D5E] hover:bg-[#FFF7F1]"
           >
             <Printer className="h-4 w-4" />
             Guardar o imprimir

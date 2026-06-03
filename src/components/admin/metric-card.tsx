@@ -11,25 +11,25 @@ interface MetricCardProps {
 
 const accentStyles = {
   slate: {
-    card: 'border-[#d9e2eb] bg-[linear-gradient(180deg,rgba(255,255,255,0.96)_0%,rgba(246,249,252,0.96)_100%)] shadow-[0_28px_60px_-42px_rgba(16,32,51,0.35)]',
-    orb: 'bg-[#d9e6f2]',
-    icon: 'bg-[#eef4f9] text-[#102033]',
-    value: 'text-[#102033]',
-    line: 'from-[#102033] via-[#183250] to-[#33557a]',
+    card: 'border-[#E9B9B6] bg-[linear-gradient(180deg,rgba(255,247,241,0.96)_0%,rgba(255,247,241,0.96)_100%)] shadow-[0_28px_60px_-42px_rgba(142,77,94,0.35)]',
+    orb: 'bg-[#E9B9B6]',
+    icon: 'bg-[#FFF7F1] text-[#8E4D5E]',
+    value: 'text-[#8E4D5E]',
+    line: 'from-[#8E4D5E] via-[#C98F8F] to-[#D9A5A0]',
   },
   brass: {
-    card: 'border-[#e2d4c0] bg-[linear-gradient(180deg,rgba(252,248,242,0.98)_0%,rgba(247,241,231,0.98)_100%)] shadow-[0_28px_60px_-42px_rgba(108,82,31,0.32)]',
-    orb: 'bg-[#ebe0cc]',
-    icon: 'bg-[#f4ecde] text-[#7b622f]',
-    value: 'text-[#5c4925]',
-    line: 'from-[#af8d52] via-[#c4a56a] to-[#ddc699]',
+    card: 'border-[#D8B56D] bg-[linear-gradient(180deg,rgba(255,247,241,0.98)_0%,rgba(255,247,241,0.9)_100%)] shadow-[0_28px_60px_-42px_rgba(201,166,90,0.32)]',
+    orb: 'bg-[#FFF7F1]',
+    icon: 'bg-[#FFF7F1] text-[#C9A65A]',
+    value: 'text-[#8E4D5E]',
+    line: 'from-[#D8B56D] via-[#C9A65A] to-[#D8B56D]',
   },
   steel: {
-    card: 'border-[#d8e1ec] bg-[linear-gradient(180deg,rgba(244,248,251,0.98)_0%,rgba(236,242,247,0.98)_100%)] shadow-[0_28px_60px_-42px_rgba(42,72,104,0.28)]',
-    orb: 'bg-[#d5e1ec]',
-    icon: 'bg-[#edf3f8] text-[#274464]',
-    value: 'text-[#183250]',
-    line: 'from-[#36597f] via-[#5e81a4] to-[#8ea8c1]',
+    card: 'border-[#E9B9B6] bg-[linear-gradient(180deg,rgba(255,247,241,0.98)_0%,rgba(255,247,241,0.92)_100%)] shadow-[0_28px_60px_-42px_rgba(201,143,143,0.28)]',
+    orb: 'bg-[#E9B9B6]',
+    icon: 'bg-[#FFF7F1] text-[#C98F8F]',
+    value: 'text-[#C98F8F]',
+    line: 'from-[#8E4D5E] via-[#D9A5A0] to-[#E9B9B6]',
   },
 };
 

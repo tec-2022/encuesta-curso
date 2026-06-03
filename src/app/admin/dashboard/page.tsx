@@ -117,33 +117,33 @@ export default async function DashboardPage() {
   const hasResponses = totalResponses > 0;
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-[linear-gradient(180deg,#f4efe7_0%,#f7f3ed_35%,#eef3f8_100%)]">
+    <div className="relative min-h-screen overflow-hidden bg-[linear-gradient(180deg,#FFF7F1_0%,#FFF7F1_35%,#FFF7F1_100%)]">
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute left-[-6rem] top-[-3rem] h-72 w-72 rounded-full bg-[#d6e3ef]/70 blur-3xl" />
-        <div className="absolute right-[-4rem] top-40 h-72 w-72 rounded-full bg-[#e6d9c7]/70 blur-3xl" />
+        <div className="absolute left-[-6rem] top-[-3rem] h-72 w-72 rounded-full bg-[#E9B9B6]/70 blur-3xl" />
+        <div className="absolute right-[-4rem] top-40 h-72 w-72 rounded-full bg-[#D8B56D]/70 blur-3xl" />
         <div className="absolute bottom-8 left-1/3 h-60 w-60 rounded-full bg-white/50 blur-3xl" />
       </div>
       <AdminHeader />
 
       <main className="mx-auto flex-grow max-w-7xl space-y-8 px-4 py-8 sm:px-6 lg:px-8">
-        <section className="relative overflow-hidden rounded-[36px] border border-white/70 bg-[linear-gradient(135deg,rgba(9,19,33,0.98)_0%,rgba(16,32,51,0.96)_55%,rgba(24,50,80,0.92)_100%)] p-6 text-white shadow-[0_40px_120px_-52px_rgba(9,19,33,0.8)] sm:p-8">
+        <section className="relative overflow-hidden rounded-[36px] border border-white/70 bg-[linear-gradient(135deg,rgba(142,77,94,0.98)_0%,rgba(142,77,94,0.96)_55%,rgba(201,143,143,0.92)_100%)] p-6 text-white shadow-[0_40px_120px_-52px_rgba(142,77,94,0.78)] sm:p-8">
           <div className="absolute inset-y-0 right-0 w-1/2 bg-[radial-gradient(circle_at_top_right,rgba(175,141,82,0.34),transparent_48%)]" />
           <div className="absolute -right-10 top-8 h-40 w-40 rounded-full border border-white/10 bg-white/5" />
           <div className="relative grid gap-8 xl:grid-cols-[1.3fr_0.9fr]">
             <div className="space-y-6">
-              <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/8 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.28em] text-[#d8e1ec]">
-                <Sparkles className="h-3.5 w-3.5 text-[#ddc699]" />
+              <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/8 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.28em] text-[#E9B9B6]">
+                <Sparkles className="h-3.5 w-3.5 text-[#D8B56D]" />
                 Resumen ejecutivo
               </span>
               <div className="space-y-4">
                 <h1 className="font-display max-w-3xl text-4xl font-semibold tracking-[-0.05em] text-white sm:text-5xl">
                   Un tablero más premium, enfocado en decisión, lectura rápida y seguimiento docente.
                 </h1>
-                <p className="max-w-2xl text-sm leading-7 text-[#d8e1ec] sm:text-base">
+                <p className="max-w-2xl text-sm leading-7 text-[#E9B9B6] sm:text-base">
                   Este corte concentra participación, señales de mejora y actividades mejor evaluadas para convertir respuestas dispersas en prioridades accionables.
                 </p>
               </div>
-              <div className="flex flex-wrap gap-3 text-sm text-[#d8e1ec]">
+              <div className="flex flex-wrap gap-3 text-sm text-[#E9B9B6]">
                 <div className="rounded-full border border-white/12 bg-white/8 px-4 py-2">
                   <span className="font-semibold text-white">{totalResponses}</span> respuestas acumuladas
                 </div>
@@ -154,7 +154,7 @@ export default async function DashboardPage() {
               <div className="flex flex-wrap items-center gap-3 print:hidden">
                 <Link
                   href="/admin/respuestas"
-                  className="inline-flex h-11 items-center justify-center gap-2 rounded-full bg-[#f4efe7] px-5 text-sm font-semibold text-[#102033] transition-colors hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#102033]"
+                  className="inline-flex h-11 items-center justify-center gap-2 rounded-full bg-[#FFF7F1] px-5 text-sm font-semibold text-[#8E4D5E] transition-colors hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#8E4D5E]"
                 >
                   <ListCollapse className="h-4 w-4" />
                   Ver respuestas
@@ -163,7 +163,7 @@ export default async function DashboardPage() {
                   href="/api/admin/export/csv"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex h-11 items-center justify-center gap-2 rounded-full border border-white/15 bg-white/8 px-4 text-sm font-medium text-white transition-colors hover:bg-white/12 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#102033]"
+                  className="inline-flex h-11 items-center justify-center gap-2 rounded-full border border-white/15 bg-white/8 px-4 text-sm font-medium text-white transition-colors hover:bg-white/12 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#8E4D5E]"
                 >
                   <Download className="h-4 w-4" />
                   Exportar CSV
@@ -183,7 +183,7 @@ export default async function DashboardPage() {
 
             <Card className="rounded-[32px] border-white/10 bg-white/8 text-white shadow-none backdrop-blur">
               <CardHeader className="space-y-3">
-                <CardDescription className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#b8cade]">
+                <CardDescription className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#D9A5A0]">
                   Corte actual
                 </CardDescription>
                 <CardTitle className="font-display text-3xl font-semibold tracking-[-0.04em] text-white">
@@ -192,41 +192,41 @@ export default async function DashboardPage() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="rounded-[26px] border border-white/10 bg-black/10 p-4">
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#b8cade]">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#D9A5A0]">
                     Materia con mayor tracción
                   </p>
                   <p className="mt-3 text-xl font-semibold text-white">
                     {topSubject?.subject ?? 'Sin datos'}
                   </p>
-                  <p className="mt-1 text-sm leading-6 text-[#d8e1ec]">
+                  <p className="mt-1 text-sm leading-6 text-[#E9B9B6]">
                     {topSubject
                       ? `${topSubject.count} respuestas, ${topSubject.share}% del total y una ventaja de ${subjectLead} frente al siguiente grupo.`
                       : 'Comparte la encuesta para comenzar a generar cortes comparables.'}
                   </p>
                 </div>
                 <div className="rounded-[26px] border border-white/10 bg-black/10 p-4">
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#b8cade]">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#D9A5A0]">
                     Señal docente dominante
                   </p>
                   <p className="mt-3 text-xl font-semibold text-white">
                     {topSignal?.label ?? 'Sin datos'}
                   </p>
-                  <p className="mt-1 text-sm leading-6 text-[#d8e1ec]">
+                  <p className="mt-1 text-sm leading-6 text-[#E9B9B6]">
                     {topSignal
                       ? `Aparece en ${topSignal.count} respuestas (${topSignal.share}%), lo que la convierte en la línea de análisis más visible del corte actual.`
                       : 'Todavía no hay suficiente evidencia para definir una prioridad.'}
                   </p>
                 </div>
                 <div className="flex items-center gap-3 rounded-[26px] border border-white/10 bg-black/10 p-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/8 text-[#ddc699]">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/8 text-[#D8B56D]">
                     <Calendar className="h-5 w-5" />
                   </div>
                   <div>
-                    <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#b8cade]">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#D9A5A0]">
                       Ultima actualización
                     </p>
                     <p className="text-sm font-semibold text-white">{latestDateLabel}</p>
-                    <p className="text-sm text-[#d8e1ec]">{latestTimeLabel}</p>
+                    <p className="text-sm text-[#E9B9B6]">{latestTimeLabel}</p>
                   </div>
                 </div>
               </CardContent>
@@ -235,9 +235,9 @@ export default async function DashboardPage() {
         </section>
 
         {!hasResponses ? (
-          <div className="rounded-[32px] border border-white/70 bg-white/78 p-12 text-center shadow-[0_32px_90px_-56px_rgba(16,32,51,0.45)]">
-            <MessageSquareText className="mx-auto h-14 w-14 text-[#6d8195]" />
-            <h2 className="mt-4 font-display text-3xl font-semibold tracking-[-0.04em] text-[#102033]">
+          <div className="rounded-[32px] border border-white/70 bg-white/78 p-12 text-center shadow-[0_32px_90px_-56px_rgba(142,77,94,0.45)]">
+            <MessageSquareText className="mx-auto h-14 w-14 text-[#B98E86]" />
+            <h2 className="mt-4 font-display text-3xl font-semibold tracking-[-0.04em] text-[#8E4D5E]">
               Aun no hay respuestas para analizar
             </h2>
             <p className="mx-auto mt-3 max-w-xl text-sm leading-6 text-slate-500">
@@ -285,12 +285,12 @@ export default async function DashboardPage() {
             </div>
 
             <div className="grid gap-6 xl:grid-cols-[1.16fr_0.84fr]">
-              <Card className="rounded-[32px] border-[#d9e2eb] bg-[rgba(255,255,255,0.9)] shadow-[0_30px_90px_-58px_rgba(16,32,51,0.5)]">
+              <Card className="rounded-[32px] border-[#E9B9B6] bg-[rgba(255,247,241,0.9)] shadow-[0_30px_90px_-58px_rgba(142,77,94,0.5)]">
                 <CardHeader>
                   <CardDescription className="text-[11px] font-semibold uppercase tracking-[0.24em] text-slate-400">
                     Actividades con mayor recordación
                   </CardDescription>
-                  <CardTitle className="font-display text-3xl font-semibold tracking-[-0.04em] text-[#102033]">
+                  <CardTitle className="font-display text-3xl font-semibold tracking-[-0.04em] text-[#8E4D5E]">
                     Qué prácticas sostienen mejor el aprendizaje
                   </CardTitle>
                   <CardDescription className="text-slate-500">
@@ -303,12 +303,12 @@ export default async function DashboardPage() {
               </Card>
 
               <div className="space-y-6">
-                <Card className="rounded-[32px] border-[#d9e2eb] bg-[rgba(255,255,255,0.9)] shadow-[0_30px_90px_-58px_rgba(16,32,51,0.5)]">
+                <Card className="rounded-[32px] border-[#E9B9B6] bg-[rgba(255,247,241,0.9)] shadow-[0_30px_90px_-58px_rgba(142,77,94,0.5)]">
                   <CardHeader>
                     <CardDescription className="text-[11px] font-semibold uppercase tracking-[0.24em] text-slate-400">
                       Balance de muestra
                     </CardDescription>
-                    <CardTitle className="font-display text-3xl font-semibold tracking-[-0.04em] text-[#102033]">
+                    <CardTitle className="font-display text-3xl font-semibold tracking-[-0.04em] text-[#8E4D5E]">
                       Distribución por materia
                     </CardTitle>
                   </CardHeader>
@@ -317,22 +317,22 @@ export default async function DashboardPage() {
                   </CardContent>
                 </Card>
 
-                <Card className="rounded-[32px] border-[#d9e2eb] bg-[linear-gradient(180deg,rgba(255,255,255,0.94)_0%,rgba(246,249,252,0.94)_100%)] shadow-[0_30px_90px_-58px_rgba(16,32,51,0.5)]">
+                <Card className="rounded-[32px] border-[#E9B9B6] bg-[linear-gradient(180deg,rgba(255,247,241,0.94)_0%,rgba(255,247,241,0.92)_100%)] shadow-[0_30px_90px_-58px_rgba(142,77,94,0.5)]">
                   <CardHeader>
                     <CardDescription className="text-[11px] font-semibold uppercase tracking-[0.24em] text-slate-400">
                       Lectura estratégica
                     </CardDescription>
-                    <CardTitle className="font-display text-3xl font-semibold tracking-[-0.04em] text-[#102033]">
+                    <CardTitle className="font-display text-3xl font-semibold tracking-[-0.04em] text-[#8E4D5E]">
                       Hallazgos prioritarios
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-5">
-                    <div className="rounded-[24px] border border-[#e0d5c3] bg-[#fbf8f2] p-4">
+                    <div className="rounded-[24px] border border-[#D8B56D] bg-[#FFF7F1] p-4">
                       <div className="flex items-center justify-between gap-3">
-                        <p className="text-sm font-semibold text-[#102033]">Actividad más fuerte</p>
-                        <ArrowUpRight className="h-4 w-4 text-[#af8d52]" />
+                        <p className="text-sm font-semibold text-[#8E4D5E]">Actividad más fuerte</p>
+                        <ArrowUpRight className="h-4 w-4 text-[#D8B56D]" />
                       </div>
-                      <p className="mt-2 text-lg font-semibold text-[#5c4925]">
+                      <p className="mt-2 text-lg font-semibold text-[#8E4D5E]">
                         {topActivity?.activity ?? 'Sin datos aun'}
                       </p>
                       <p className="mt-1 text-sm leading-6 text-slate-500">
@@ -347,17 +347,17 @@ export default async function DashboardPage() {
                         <div key={entry.subject} className="space-y-2">
                           <div className="flex items-center justify-between gap-3">
                             <div className="flex items-center gap-2 text-sm font-semibold text-slate-700">
-                              <BookOpen className="h-4 w-4 text-[#183250]" />
+                              <BookOpen className="h-4 w-4 text-[#C98F8F]" />
                               <span>{entry.subject}</span>
                             </div>
                             <div className="text-right">
-                              <p className="text-sm font-bold text-[#102033]">{entry.count}</p>
+                              <p className="text-sm font-bold text-[#8E4D5E]">{entry.count}</p>
                               <p className="text-xs text-slate-400">{entry.share}%</p>
                             </div>
                           </div>
-                          <div className="h-2.5 overflow-hidden rounded-full bg-[#e9eef4]">
+                          <div className="h-2.5 overflow-hidden rounded-full bg-[#E9B9B6]">
                             <div
-                              className="h-full rounded-full bg-gradient-to-r from-[#102033] via-[#183250] to-[#af8d52]"
+                              className="h-full rounded-full bg-gradient-to-r from-[#8E4D5E] via-[#C98F8F] to-[#D8B56D]"
                               style={{ width: `${entry.share}%` }}
                             />
                           </div>
@@ -370,12 +370,12 @@ export default async function DashboardPage() {
             </div>
 
             <div className="grid gap-6 xl:grid-cols-[0.95fr_1.05fr]">
-              <Card className="rounded-[32px] border-[#d9e2eb] bg-[rgba(255,255,255,0.9)] shadow-[0_30px_90px_-58px_rgba(16,32,51,0.5)]">
+              <Card className="rounded-[32px] border-[#E9B9B6] bg-[rgba(255,247,241,0.9)] shadow-[0_30px_90px_-58px_rgba(142,77,94,0.5)]">
                 <CardHeader>
                   <CardDescription className="text-[11px] font-semibold uppercase tracking-[0.24em] text-slate-400">
                     Radar de seguimiento
                   </CardDescription>
-                  <CardTitle className="font-display text-3xl font-semibold tracking-[-0.04em] text-[#102033]">
+                  <CardTitle className="font-display text-3xl font-semibold tracking-[-0.04em] text-[#8E4D5E]">
                     Dónde sí hubo narrativa útil
                   </CardTitle>
                   <CardDescription className="text-slate-500">
@@ -386,15 +386,15 @@ export default async function DashboardPage() {
                   {feedbackSignals.map((signal) => (
                     <div
                       key={signal.key}
-                      className="rounded-[24px] border border-[#e6ebf1] bg-[rgba(247,250,252,0.82)] p-4"
+                      className="rounded-[24px] border border-[#E9B9B6] bg-[rgba(255,247,241,0.85)] p-4"
                     >
                       <div className="flex items-center justify-between gap-3">
                         <div>
-                          <p className="text-sm font-semibold text-[#102033]">{signal.label}</p>
+                          <p className="text-sm font-semibold text-[#8E4D5E]">{signal.label}</p>
                           <p className="mt-1 text-sm leading-6 text-slate-500">{signal.note}</p>
                         </div>
                         <div className="text-right">
-                          <p className="font-display text-3xl font-semibold tracking-[-0.04em] text-[#102033]">
+                          <p className="font-display text-3xl font-semibold tracking-[-0.04em] text-[#8E4D5E]">
                             {signal.count}
                           </p>
                           <p className="text-xs uppercase tracking-[0.2em] text-slate-400">{signal.share}%</p>
@@ -405,36 +405,36 @@ export default async function DashboardPage() {
                 </CardContent>
               </Card>
 
-              <Card className="rounded-[32px] border-[#d9e2eb] bg-[linear-gradient(180deg,rgba(255,255,255,0.92)_0%,rgba(251,248,242,0.92)_100%)] shadow-[0_30px_90px_-58px_rgba(16,32,51,0.5)]">
+              <Card className="rounded-[32px] border-[#E9B9B6] bg-[linear-gradient(180deg,rgba(255,247,241,0.92)_0%,rgba(251,248,242,0.92)_100%)] shadow-[0_30px_90px_-58px_rgba(142,77,94,0.5)]">
                 <CardHeader>
                   <CardDescription className="text-[11px] font-semibold uppercase tracking-[0.24em] text-slate-400">
                     Brief ejecutivo
                   </CardDescription>
-                  <CardTitle className="font-display text-3xl font-semibold tracking-[-0.04em] text-[#102033]">
+                  <CardTitle className="font-display text-3xl font-semibold tracking-[-0.04em] text-[#8E4D5E]">
                     Lo más importante del corte
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="rounded-[24px] border border-[#e2d4c0] bg-[#fbf8f2] p-5">
+                  <div className="rounded-[24px] border border-[#D8B56D] bg-[#FFF7F1] p-5">
                     <div className="flex items-start gap-3">
-                      <div className="mt-0.5 flex h-10 w-10 items-center justify-center rounded-2xl bg-[#f0e5d5] text-[#af8d52]">
+                      <div className="mt-0.5 flex h-10 w-10 items-center justify-center rounded-2xl bg-[#FFF7F1] text-[#D8B56D]">
                         <CheckCircle2 className="h-5 w-5" />
                       </div>
                       <div>
-                        <p className="text-sm font-semibold text-[#102033]">Participación utilizable</p>
+                        <p className="text-sm font-semibold text-[#8E4D5E]">Participación utilizable</p>
                         <p className="mt-1 text-sm leading-7 text-slate-600">
                           {feedbackRate}% de las respuestas ya incluye texto abierto, suficiente para combinar lectura cuantitativa y revisión cualitativa.
                         </p>
                       </div>
                     </div>
                   </div>
-                  <div className="rounded-[24px] border border-[#e6ebf1] bg-[rgba(247,250,252,0.9)] p-5">
+                  <div className="rounded-[24px] border border-[#E9B9B6] bg-[rgba(255,247,241,0.92)] p-5">
                     <div className="flex items-start gap-3">
-                      <div className="mt-0.5 flex h-10 w-10 items-center justify-center rounded-2xl bg-[#ebf1f7] text-[#183250]">
+                      <div className="mt-0.5 flex h-10 w-10 items-center justify-center rounded-2xl bg-[#FFF7F1] text-[#C98F8F]">
                         <TrendingUp className="h-5 w-5" />
                       </div>
                       <div>
-                        <p className="text-sm font-semibold text-[#102033]">Concentración de muestra</p>
+                        <p className="text-sm font-semibold text-[#8E4D5E]">Concentración de muestra</p>
                         <p className="mt-1 text-sm leading-7 text-slate-600">
                           {topSubject
                             ? `${topSubject.subject} lidera con ${topSubject.share}% del volumen; conviene revisar si el resto de grupos necesita más difusión para equilibrar la muestra.`
@@ -443,18 +443,18 @@ export default async function DashboardPage() {
                       </div>
                     </div>
                   </div>
-                  <div className="rounded-[24px] border border-[#e6ebf1] bg-white p-5">
-                    <p className="text-sm font-semibold text-[#102033]">Top actividades mencionadas</p>
+                  <div className="rounded-[24px] border border-[#E9B9B6] bg-white p-5">
+                    <p className="text-sm font-semibold text-[#8E4D5E]">Top actividades mencionadas</p>
                     <div className="mt-4 space-y-3">
                       {topActivities.map((activity, index) => (
                         <div key={activity.activity} className="flex items-center justify-between gap-3">
                           <div className="flex items-center gap-3">
-                            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#edf3f8] text-xs font-semibold text-[#183250]">
+                            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#FFF7F1] text-xs font-semibold text-[#C98F8F]">
                               0{index + 1}
                             </span>
                             <span className="text-sm text-slate-700">{activity.activity}</span>
                           </div>
-                          <span className="text-sm font-semibold text-[#102033]">{activity.count}</span>
+                          <span className="text-sm font-semibold text-[#8E4D5E]">{activity.count}</span>
                         </div>
                       ))}
                     </div>
@@ -463,22 +463,22 @@ export default async function DashboardPage() {
               </Card>
             </div>
 
-            <Card className="rounded-[32px] border-[#d9e2eb] bg-[linear-gradient(135deg,rgba(16,32,51,0.98)_0%,rgba(24,50,80,0.95)_100%)] text-white shadow-[0_30px_100px_-60px_rgba(9,19,33,0.75)]">
+            <Card className="rounded-[32px] border-[#E9B9B6] bg-[linear-gradient(135deg,rgba(142,77,94,0.98)_0%,rgba(201,143,143,0.95)_100%)] text-white shadow-[0_30px_100px_-60px_rgba(142,77,94,0.72)]">
               <CardHeader className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                 <div>
-                  <CardDescription className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#b8cade]">
+                  <CardDescription className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#D9A5A0]">
                     Siguiente paso
                   </CardDescription>
                   <CardTitle className="font-display text-3xl font-semibold tracking-[-0.04em] text-white">
                     Baja al nivel de comentario y prepara tu PDF
                   </CardTitle>
-                  <CardDescription className="max-w-2xl text-[#d8e1ec]">
+                  <CardDescription className="max-w-2xl text-[#E9B9B6]">
                     Entra al listado completo para encontrar patrones repetidos, aplicar filtros y generar un reporte limpio para guardar o imprimir.
                   </CardDescription>
                 </div>
                 <Link
                   href="/admin/respuestas"
-                  className="inline-flex h-11 items-center justify-center gap-2 rounded-full bg-[#f4efe7] px-5 text-sm font-semibold text-[#102033] transition-colors hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#102033]"
+                  className="inline-flex h-11 items-center justify-center gap-2 rounded-full bg-[#FFF7F1] px-5 text-sm font-semibold text-[#8E4D5E] transition-colors hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#8E4D5E]"
                 >
                   <ListCollapse className="h-4 w-4" />
                   Ir al listado completo

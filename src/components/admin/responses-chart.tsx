@@ -11,7 +11,7 @@ interface ResponsesChartProps {
 }
 
 export function ResponsesChart({ data }: ResponsesChartProps) {
-  const colors = ['#102033', '#3f5f84', '#af8d52'];
+  const colors = ['#8E4D5E', '#C98F8F', '#D8B56D'];
 
   return (
     <div className="h-[320px] w-full">
@@ -20,17 +20,17 @@ export function ResponsesChart({ data }: ResponsesChartProps) {
           data={data}
           margin={{ top: 12, right: 8, left: -24, bottom: 8 }}
         >
-          <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#dfe6ee" />
+          <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#E9B9B6" />
           <XAxis 
             dataKey="subject" 
-            stroke="#6d8195" 
+            stroke="#B98E86" 
             fontSize={11}
             fontWeight={600}
             tickLine={false}
             axisLine={false}
           />
           <YAxis 
-            stroke="#6d8195" 
+            stroke="#B98E86" 
             fontSize={11}
             fontWeight={600}
             tickLine={false}

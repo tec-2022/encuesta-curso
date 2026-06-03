@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f4efe7;
-  --foreground: #1f2937;
+  --background: #FFF7F1;
+  --foreground: #2d1d20;
 }
 
 @theme {
@@ -11,22 +11,23 @@
   --font-sans: var(--font-sans);
   --font-display: var(--font-display);
 
-  --color-ink: #102033;
-  --color-ink-soft: #4d6175;
-  --color-parchment: #f4efe7;
-  --color-ivory: #fbf8f2;
-  --color-sand: #d9ccbb;
-  --color-brass: #af8d52;
-  --color-smoke: #d8e1ec;
+  --color-marfil: #FFF7F1;
+  --color-rosa-empolvado: #E9B9B6;
+  --color-rose-gold: #C98F8F;
+  --color-rose-gold-suave: #D9A5A0;
+  --color-champagne-gold: #D8B56D;
+  --color-dorado-suave: #C9A65A;
+  --color-vino: #8E4D5E;
+  --color-taupe: #B98E86;
 
-  --color-blue-50: #edf3f8;
-  --color-blue-100: #d8e6f2;
-  --color-blue-200: #b8cade;
-  --color-blue-300: #6d8195;
-  --color-blue-500: #af8d52;
-  --color-blue-800: #183250;
-  --color-blue-900: #102033;
-  --color-blue-950: #091321;
+  --color-blue-50: #FFF7F1;
+  --color-blue-100: #E9B9B6;
+  --color-blue-200: #C9A65A;
+  --color-blue-300: #B98E86;
+  --color-blue-500: #D8B56D;
+  --color-blue-800: #D9A5A0;
+  --color-blue-900: #C98F8F;
+  --color-blue-950: #8E4D5E;
 }
 
 body {
@@ -36,7 +37,7 @@ body {
 }
 
 ::selection {
-  background: rgba(175, 141, 82, 0.22);
+  background: rgba(201, 143, 143, 0.22);
 }
 
 .font-display {

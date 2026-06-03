@@ -21,10 +21,10 @@ export function ActivitiesChart({ data }: ActivitiesChartProps) {
           data={sortedData}
           margin={{ top: 8, right: 18, left: 12, bottom: 8 }}
         >
-          <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="#dfe6ee" />
+          <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="#E9B9B6" />
           <XAxis 
             type="number" 
-            stroke="#6d8195" 
+            stroke="#B98E86" 
             fontSize={11}
             fontWeight={600}
             tickLine={false}
@@ -34,7 +34,7 @@ export function ActivitiesChart({ data }: ActivitiesChartProps) {
           <YAxis 
             type="category" 
             dataKey="activity" 
-            stroke="#6d8195" 
+            stroke="#B98E86" 
             fontSize={11}
             fontWeight={500}
             tickLine={false}
@@ -56,7 +56,7 @@ export function ActivitiesChart({ data }: ActivitiesChartProps) {
               boxShadow: '0 18px 40px -28px rgba(16, 32, 51, 0.45)',
             }}
           />
-          <Bar dataKey="count" fill="#102033" radius={[0, 14, 14, 0]} maxBarSize={18} />
+          <Bar dataKey="count" fill="#8E4D5E" radius={[0, 14, 14, 0]} maxBarSize={18} />
         </BarChart>
       </ResponsiveContainer>
     </div>
