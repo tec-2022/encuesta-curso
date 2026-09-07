@@ -2,6 +2,13 @@
 
 Este proyecto es una aplicación web de producción diseñada para que los estudiantes universitarios envíen de manera 100% anónima recomendaciones sobre materias que cursaron. Cuenta además con un panel de administración privado y seguro para la docente, donde se pueden visualizar métricas agregadas (con gráficos interactivos), filtrar respuestas por curso, rango de fechas o palabra clave, exportar los resultados a CSV y generar reportes listos para imprimir a PDF.
 
+
+## ✨ Lo que demuestra este proyecto
+- Construcción de aplicaciones full-stack con Next.js, TypeScript y Supabase.
+- Diseño de formularios anónimos con validación, privacidad y reglas de acceso.
+- Panel administrativo con métricas, filtros, exportación CSV y reportes PDF.
+- Cuidado por experiencia de usuario, seguridad básica y documentación reproducible.
+
 ## 🛠️ Stack Tecnológico
 * **Framework**: Next.js (App Router, Server Actions, React 19)
 * **Lenguaje**: TypeScript
@@ -100,3 +107,4 @@ Si las respuestas automatizadas aumentan, se puede integrar de la siguiente mane
    * `NEXT_PUBLIC_SUPABASE_URL`
    * `NEXT_PUBLIC_SUPABASE_ANON_KEY`
 5. Haz clic en **Deploy**. Vercel configurará automáticamente el entorno de producción y te proporcionará una URL pública.
+
